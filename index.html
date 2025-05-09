@@ -5,49 +5,90 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Biodata Azwar</title>
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      font-family: 'Arial', sans-serif;
-      background: url('https://i.pinimg.com/originals/f4/ae/b1/f4aeb17f4262a43d1a7463639a5cf31b.gif') center/cover no-repeat;
-      color: #333;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('https://i.pinimg.com/originals/ba/2c/2e/ba2c2eeb4523ebaa2a7b9e53dfdc25a0.jpg') center/cover no-repeat;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .rain {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      background-image: repeating-linear-gradient(
+        0deg,
+        rgba(255,255,255,0.2),
+        rgba(255,255,255,0.2) 1px,
+        transparent 1px,
+        transparent 4px
+      );
+      animation: rain 0.4s linear infinite;
+      z-index: 1;
+    }
+
+    @keyframes rain {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 4px; }
+    }
+
     .card {
-      background: rgba(255, 255, 255, 0.9);
+      position: relative;
+      z-index: 2;
+      background: rgba(255, 255, 255, 0.92);
       width: 90%;
       max-width: 400px;
       margin: 80px auto;
-      padding: 20px;
-      border-radius: 15px;
+      padding: 25px;
+      border-radius: 20px;
       text-align: center;
-      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      backdrop-filter: blur(5px);
     }
+
     .card img {
-      width: 100px;
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
       border-radius: 50%;
-      margin-top: -60px;
-      border: 4px solid white;
+      margin-top: -70px;
+      border: 5px solid white;
     }
+
     h2 {
-      margin-bottom: 10px;
+      margin: 15px 0 10px;
+      font-size: 24px;
     }
+
     p {
-      margin: 5px 0;
+      margin: 6px 0;
+      font-size: 15px;
     }
+
     a {
-      color: blue;
+      color: #3498db;
       text-decoration: none;
     }
   </style>
 </head>
 <body>
+  <div class="rain"></div>
+
   <div class="card">
-    <img src="https://avatars.githubusercontent.com/u/00000000?v=4" alt="Foto Profil" />
+    <img src="image.jpg" alt="Foto Profil" />
     <h2>Biodata Diri</h2>
     <p><strong>Nama Lengkap:</strong> Azwar Gumilang</p>
-    <p><strong>Tempat, Tanggal Lahir:</strong> Bogor, 08 Mei 2007</p>
+    <p><strong>Tempat, Tanggal Lahir:</strong> Bogor, 07 Januari 2007</p>
     <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
-    <p><strong>Email:</strong> azwargumilang14@gmail.com</p>
+    <p><strong>Email:</strong> azwargumilang@gmail.com</p>
     <p><strong>No. Telepon:</strong> <a href="tel:+6285775186113">0857-7346-60486</a></p>
     <p><strong>Hobi:</strong> Olahraga</p>
   </div>

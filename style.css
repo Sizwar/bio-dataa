@@ -9,14 +9,19 @@ body {
     position: relative; /* Untuk positioning absolute pada video */
 }
 
-.video-background {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1; /* Letakkan video di belakang konten lain */
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    object-fit: cover; /* Kita coba tetap pakai cover tapi dengan positioning */
+    z-index: -1; /* Pastikan tetap di belakang */
 }
+
 
 .video-background video {
     min-width: 100%;

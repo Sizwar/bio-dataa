@@ -23,7 +23,7 @@ body {
     min-height: 100%;
     width: auto;
     height: auto;
-    object-fit: cover; /* Membuat video menutupi seluruh background */
+    object-fit: contain; /* Membuat video menutupi seluruh background */
 }
 
 .container {

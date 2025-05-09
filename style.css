@@ -23,18 +23,14 @@ body {
     min-height: 100%;
     width: auto;
     height: auto;
-    object-fit: contain; /* Membuat video menutupi seluruh background */
+    object-fit: contain;
 }
 
 .container {
-    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan untuk container */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    position: relative; /* Agar konten berada di atas video */
-    z-index: 1; /* Pastikan konten berada di atas video */
-    text-align: center; /* Agar isi container tetap di tengah */
+    /* ... properti lain ... */
+    height: 80vh; /* Contoh, atur tinggi 80% dari tinggi viewport */
 }
+
 
 .biodata-card {
     /* text-align: center; (bisa dihapus karena container sudah text-align: center) */

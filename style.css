@@ -57,12 +57,12 @@ body {
 
 
 .profile-picture {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
     overflow: hidden;
     margin: 0 auto 15px;
-    border: 10px solid #ddd; /* Contoh border foto profil */
+    border: 5px solid #ddd; /* Contoh border foto profil */
 }
 
 .profile-picture img {

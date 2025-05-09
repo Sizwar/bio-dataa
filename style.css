@@ -33,9 +33,15 @@ body {
 
 
 .container {
-    /* ... properti lain ... */
-    height: 80vh; /* Contoh, atur tinggi 80% dari tinggi viewport */
+    background-color: rgba(255, 255, 255, 0.9); /* Latar belakang putih semi-transparan */
+    padding: 30px; /* Ruang di dalam container */
+    border-radius: 15px; /* Sudut membulat */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan tipis */
+    text-align: center; /* Teks di tengah */
+    max-width: 600px; /* Lebar maksimum container */
+    margin: 0 auto; /* Membuat container berada di tengah horizontal */
 }
+
 
 
 .biodata-card {

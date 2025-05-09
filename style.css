@@ -21,8 +21,8 @@ body {
 .video-background video {
     min-width: 100%;
     min-height: 100%;
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 100px;
     object-fit: contain;
 }
 

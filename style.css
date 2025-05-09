@@ -1,0 +1,75 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Sembunyikan overflow video jika lebih besar dari viewport */
+    position: relative; /* Untuk positioning absolute pada video */
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1; /* Letakkan video di belakang konten lain */
+}
+
+.video-background video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Membuat video menutupi seluruh background */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8); /* Latar belakang semi-transparan untuk container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* Agar konten berada di atas video */
+    z-index: 1; /* Pastikan konten berada di atas video */
+    text-align: center; /* Agar isi container tetap di tengah */
+}
+
+.biodata-card {
+    /* text-align: center; (bisa dihapus karena container sudah text-align: center) */
+}
+
+.profile-picture {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+    border: 5px solid #ddd; /* Contoh border foto profil */
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.info {
+    text-align: left;
+}
+
+.info p {
+    margin-bottom: 8px;
+    color: #555;
+}
+
+.info strong {
+    font-weight: bold;
+    color: #333;
+}

@@ -1,74 +1,27 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biodata Irgi</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
-
-    /* Video background */
-    .bg-video {
-      position: fixed;
-      top: 0;
-      left: 0;
-      min-width: 100%;
-      min-height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
-
-    .profile-picture {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 0 auto 15px;
-    border: 5px solid #ddd; /* Contoh border foto profil */
-}
-
-.profile-picture img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-    h2 {
-      margin-top: 10px;
-    }
-
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biodata Diri</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<!-- Video Background -->
-<video autoplay muted loop class="bg-video">
-  <source src="background.mp4" type="video/mp4">
-  Browser kamu tidak mendukung video.
-</video>
-  
-  <div class="profil-picture">
-    <img src="image.jpg" alt="Foto Profil" />
-    <h2>Biodata Diri</h2>
-    <p><strong>Nama Lengkap:</strong> Azwar Gumilang</p>
-    <p><strong>Tempat, Tanggal Lahir:</strong> Bogor, 07 Januari 2007</p>
-    <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
-    <p><strong>Email:</strong> azwargumilang@gmail.com</p>
-    <p><strong>No. Telepon:</strong> <a href="tel:+6285775186113">0857-7346-60486</a></p>
-    <p><strong>Hobi:</strong> Olahraga</p>
-  </div>
+    <div class="container">
+        <div class="biodata-card">
+            <div class="profile-picture">
+                <img src="image.jpg" alt="Foto Profil">
+            </div>
+            <h2>Biodata Diri</h2>
+            <div class="info">
+                <p><strong>Nama Lengkap:</strong> Azwar Gumilang</p>
+                <p><strong>Tempat, Tanggal Lahir:</strong> Bogor, 08 Mei 2000</p>
+                <p><strong>Jenis Kelamin:</strong> Laki-laki</p>
+                <p><strong>Email:</strong> azwargumilang14@gmail.com</p>
+                <p><strong>No. Telepon:</strong> 085775186113</p>
+                <p><strong>Hobi:</strong> Main</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

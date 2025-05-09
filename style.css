@@ -45,8 +45,15 @@ body {
 
 
 .biodata-card {
-    /* text-align: center; (bisa dihapus karena container sudah text-align: center) */
+    background-color: rgba(255, 255, 255, 0.9); /* Sedikit lebih solid */
+    padding: 30px; /* Padding lebih besar */
+    border-radius: 15px; /* Sudut lebih melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+    text-align: center;
+    position: relative; /* Untuk z-index jika diperlukan */
+    z-index: 2; /* Pastikan di atas video dan overlay */
 }
+
 
 .profile-picture {
     width: 50px;
